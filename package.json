@@ -1,6 +1,6 @@
 {
   "name": "free-mask-dialog",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "It's a free dialog with mask for pc client",
   "main": "index.js",
   "scripts": {

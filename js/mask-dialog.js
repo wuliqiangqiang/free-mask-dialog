@@ -243,4 +243,4 @@ class api {
   }
 }
 
-export default api;
+module.exports = api;
