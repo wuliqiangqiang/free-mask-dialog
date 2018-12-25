@@ -1,0 +1,89 @@
+@import '~global/scss/function';
+.mask_dialog_main {
+	position: fixed;
+	top: 50%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	-webkit-transform: translateY(-50%);
+	padding: 40px 0 30px 0;
+	box-sizing: border-box;
+
+	&.default {
+		background: #FFFFFF;
+		border: 1px solid #EBEBEB;
+		box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.10);
+		border-radius: 8px;
+		transform: translateY(-50%);
+		@include flex-main;
+		@include flex-main-y;
+		@include flex-x-c;
+
+		.mask_dialog_close {
+			position: absolute;
+			cursor: pointer;
+			right: 0;
+			top: 0;
+			margin-left: auto;
+			margin-right: 10px;
+			margin-top: 10px;
+			padding: 10px 10px 0 0;
+			width: 24px;
+			height: 24px;
+			background-repeat: no-repeat;
+			background-size: 50%;
+			background-position: 50%;
+			background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABmUlEQVRYR8WXu0oEQRBFz/rABwgiCibGJn6BkYGC+AD9Uhd8IGhg5A+YmJsYiKGuKCil3Uvt0Ntb1W7PTjIMM3BPV92uud3h75oHFoHX8Fz7tgK8Ab1OEH4AloFj4L6y+jZwERa7JQBLwHMAeQd2K0KI+C2wECqwLgByHQJdYAaoBaHFv4AT4DIC1IZIiouoBqgFocU/gVNZefRZE2DcEDvAVei5iEurb7TJUwAR4gyY/YcnRPwamAOS4qkWaLi9UKoIcQDcGbeoSXwUgLzXEB/AvgHCLG4B8EK4xK0AVggtLtWSqTpguFT7hpkw9W2uHfLuPBjO2qpfDQ/AsEqISWVfy90lXgLQhOgB06XipQBNCHl2rzw3CS1bXRuudYCm4b5DoCmqwjhMKBWII9cN4QHIbcOiGeAxoWUku6egFcAiHo3rhhjVAo94EUQOoETcDWENJJ4s4IJoI5JlU1EboTSbCycRywfy4aQOJv14LgBrwFMIE7VORdGY+owgY3tDAKaAR2AVOKp4LtQQEmBegM3YgraP5/1f/g9L4KdNmx+gfgAAAABJRU5ErkJggg==);
+		}
+
+		.mask_dialog_title {
+			padding: 0 60px;
+			font-size: 18px;
+			color: #0E2645;
+			text-align: center;
+			margin-bottom: 12px;
+		}
+
+		.mask_dialog_content {
+			font-size: 14px;
+			color: #616161;
+			text-align: center;
+			line-height: 16px;
+			padding: 0 30px;
+			margin-bottom: 20px;
+		}
+
+		.mask_dialog_btn_contain{
+			@include flex-main;
+			@include flex-x-c;
+			.mask_dialog_btn_item{
+				border: 1px solid #164AB0;
+				border-radius: 4px;
+				font-size: 16px;
+				color: #164AB0;
+				line-height: 1;
+				padding:16px 32px;
+				text-align: center;
+				text-decoration: none;
+				margin-right: 20px;
+				&:last-of-type{
+					background: #164AB0;
+					color: #ffffff;
+					margin-right: 0;
+				}
+			}
+		}
+	}
+}
+
+.mask_dialog_bg {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: #000000;
+	opacity: 0.3;
+	top: 0;
+	left: 0;
+}
+
+
