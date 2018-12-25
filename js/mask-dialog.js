@@ -1,5 +1,5 @@
 'use strict';
-import '../css/mask-dialog-css';
+import '../css/mask-dialog-css.css';
 
 const $ = require('jquery');
 const $maskArr = {}; //保存页面多个mask对象
