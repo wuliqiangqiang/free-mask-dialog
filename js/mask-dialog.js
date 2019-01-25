@@ -96,6 +96,7 @@ class api {
   hide(version) {
     let _version = version ? version : this.version;
     this['MaskDialog' + _version].hide();
+    $('html').css('overflow', 'auto')
     this.hideBindEven && this.hideBindEven();
     return this;
   }
