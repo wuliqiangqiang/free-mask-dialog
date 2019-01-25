@@ -109,7 +109,7 @@ class api {
     this.content = false;   //默认没有内容
     this['z-index'] = 100;      //默认弹窗的层级为100
     this.canClose = false;   //默认点击背景可以关闭全部，false为不可以点击关闭
-    this.scroll = true;     //默认页面禁止滚动，true为可以滚动
+    this.scroll = false;     //默认页面禁止滚动，true为可以滚动
     this.style = 'default';        //样式列表，针对弹窗DOM
     this.btn = [];     //按钮数组
     this.autoInitContent = true;   //自动初始化content
