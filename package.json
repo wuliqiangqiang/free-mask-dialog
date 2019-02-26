@@ -1,6 +1,6 @@
 {
   "name": "free-mask-dialog",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "It's a free dialog with mask for pc client",
   "main": "index.js",
   "scripts": {
@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/wuliqiangqiang/free-mask-dialog/issues"
   },
-  "homepage": "https://github.com/wuliqiangqiang/free-mask-dialog#readme"
+  "homepage": "https://github.com/wuliqiangqiang/free-mask-dialog#readme",
+  "devDependencies": {
+    "gulp-babel": "^8.0.0",
+    "gulp-uglify": "^3.0.1"
+  }
 }

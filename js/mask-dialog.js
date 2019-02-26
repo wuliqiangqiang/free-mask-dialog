@@ -130,7 +130,11 @@ class api {
   static _setCloseButton() {
     this.MaskDialogContent.find('.mask_dialog_close').remove();
     if (this.closeBtn) {
-      this.MaskDialogContent.append(`<div class="mask_dialog_close"></div>`);
+      if(this.closeBtnEle !== '.mask_dialog_close'){
+        this.MaskDialogContent.append(`<div class="mask_dialog_close ${this.closeBtnEle.replace(/\./g,'')}"></div>`);
+      }else{
+        this.MaskDialogContent.append(`<div class="mask_dialog_close"></div>`);
+      }
     }
   }
 
